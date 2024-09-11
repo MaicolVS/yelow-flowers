@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elige Tu Regalo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="rosas-container">
+        <h2 class="titulo">Elige uno de ellos</h2>
+        <div class="regalos">
+            <div class="regalo" id="regalo-1">
+                <img src="images/regalo.png" alt="Regalo 1">
+                <button class="btn" onclick="mostrarContenido('ramo')">Opción 1</button>
+            </div>
+            <div class="regalo" id="regalo-2">
+                <img src="images/regalo.png" alt="Regalo 2">
+                <button class="btn" onclick="mostrarContenido('osito')">Opción 2</button>
+            </div>
+        </div>
+
+        <!-- Contenido de la opción Ramo -->
+        <div id="contenido-ramo" class="contenido oculto">
+            <div class="explosion">
+                <img src="images/ramo.png" alt="Ramo de Rosas" class="imagen-regalo">
+                <p class="descripcion-ramo"><b> <em>" Por si alguna vez dudaste de que siempre pienso en ti, estas rosas solo son un pequeño recordatorio de todo lo que significas para mí "</em></b> </p>
+            </div>
+        </div>
+
+        <!-- Contenido de la opción Osito -->
+        <div id="contenido-osito" class="contenido oculto">
+            <div class="explosion">
+                <img src="images/osito.png" alt="Osito de Peluche" class="imagen-regalo">
+                <p class="descripcion-osito">TE AMO 💕</p>
+                <div class="confitis"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
